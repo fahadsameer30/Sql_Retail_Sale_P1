@@ -53,7 +53,7 @@ TRUNCATE `sql_retail_sales_analysis`.`retail_sales`;
  SELECT COUNT(*) FROM retail_sales;
  ## Customer Count: Find out how many unique customers are in the dataset.
  SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
- ## Category Count: Identify all unique product categories in the dataset.
+ ### Category Count: Identify all unique product categories in the dataset.
  SELECT COUNT(DISTINCT category)  FROM retail_sales;
  ## Null Value Check: Check for any null values in the dataset and delete records with missing data.
 
@@ -102,7 +102,7 @@ WHERE
 SELECT * FROM retail_sales
 WHERE sale_date = '2022-11-05';
 
-SELECT COUNT(*)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    FROM retail_sales;
+SELECT COUNT(*)                                                                                 FROM retail_sales;
 -- Q.2 Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 10 in the month of Nov-2022
 SELECT 
     *
