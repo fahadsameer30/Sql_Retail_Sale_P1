@@ -48,15 +48,16 @@ CREATE TABLE retail_sales
 TRUNCATE `sql_retail_sales_analysis`.`retail_sales`;
 
 -- 2. Data Exploration & Cleaning
- Record Count: Determine the total number of records in the dataset.
-
+ ### Record Count: Determine the total number of records in the dataset.
  SELECT COUNT(*) FROM retail_sales;
- ## Customer Count: Find out how many unique customers are in the dataset.
+ 
+ ### Customer Count: Find out how many unique customers are in the dataset.
  SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
- ### Category Count: Identify all unique product categories in the dataset.
+ 
+ #### Category Count: Identify all unique product categories in the dataset.
  SELECT COUNT(DISTINCT category)  FROM retail_sales;
- ## Null Value Check: Check for any null values in the dataset and delete records with missing data.
-
+ 
+ ### Null Value Check: Check for any null values in the dataset and delete records with missing data.
 
 ALTER TABLE `sql_retail_sales_analysis`.`retail_sales`
 CHANGE COLUMN `quantiy` `quantity` INT NULL DEFAULT NULL;
