@@ -48,7 +48,7 @@ CREATE TABLE retail_sales
 TRUNCATE `sql_retail_sales_analysis`.`retail_sales`;
 
 -- 2. Data Exploration & Cleaning
-## Record Count: Determine the total number of records in the dataset.
+ Record Count: Determine the total number of records in the dataset.
 
  SELECT COUNT(*) FROM retail_sales;
  ## Customer Count: Find out how many unique customers are in the dataset.
